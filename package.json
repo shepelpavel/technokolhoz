@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && nuxt generate",
+    "build": "nuxt build && nuxt generate && cp CNAME docs/CNAME",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && cp CNAME docs/CNAME",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
